@@ -1,0 +1,9 @@
+nums = [2,7,11,15]
+target = 9
+ht = {}
+for i,n in enumerate(nums):
+   dff = target - n
+   if dff in ht:
+      return[ht[dff], i]
+      ht[n] = i
+        
